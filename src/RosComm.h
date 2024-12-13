@@ -18,7 +18,7 @@ class RosComm{
         void publish(JsonDocument& msgToSend);
         void initSubscriber(JsonDocument& msgToRecieve);
         void spin();
-        JsonDocument getRecievedMessage();
+        JsonDocument& getRecievedMessage();
 };
 
 #endif

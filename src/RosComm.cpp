@@ -62,6 +62,6 @@ void RosComm::spin() {
     _msgTypeRecieved = doc;
 }
 
-JsonDocument RosComm::getRecievedMessage() {
+JsonDocument& RosComm::getRecievedMessage() {
     return _msgTypeRecieved;
 }
